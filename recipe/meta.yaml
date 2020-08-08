@@ -13,24 +13,24 @@ source:
 
 build:
   skip: True  # [win]
-  number: 0
+  number: 1
 
 requirements:
   build:
-    - gcc  # [linux]
+    - {{ compiler('c') }}
+  host:
     - llvm  # [osx]
-    - zlib 1.2.*
+    - zlib
     - lua
     - luarocks
     - lua-luafilesystem
-    - lua-luaposix 
+    - lua-luaposix
   run:
-    - libgcc  # [linux]
-    - zlib 1.2.*
+    - zlib
     - lua
     - luarocks
     - lua-luafilesystem
-    - lua-luaposix 
+    - lua-luaposix
 
 test:
   commands:
@@ -50,4 +50,4 @@ about:
 
 extra:
   recipe-maintainers:
-    - jerowe 
+    - jerowe
