@@ -1,6 +1,6 @@
 {% set name = "lmod" %}
-{% set version = "7.7.34" %}
-{% set sha256 = "415f7c9bded15860ac4ecea813c4445c4b3229c9667f70c9b8214f935d53082d" %}
+{% set version = "8.5.9" %}
+{% set sha256 = "972f99221ed7717150bd591d4f96de1230125e675658f3fe2ba10197168bd296" %}
 
 package:
   name: {{ name|lower }}
@@ -17,16 +17,15 @@ build:
 
 requirements:
   build:
-    - gcc  # [linux]
-    - llvm  # [osx]
-    - zlib 1.2.*
+    - {{ compiler('c') }}
+    - zlib
     - lua
     - luarocks
     - lua-luafilesystem
     - lua-luaposix 
   run:
     - libgcc  # [linux]
-    - zlib 1.2.*
+    - zlib
     - lua
     - luarocks
     - lua-luafilesystem
