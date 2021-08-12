@@ -8,11 +8,12 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://github.com/TACC/Lmod/archive/{{version}}.tar.gz
+  url: https://github.com/TACC/Lmod/archive/{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
-  skip: True  # [win]
+  ## osx build needs https://github.com/conda-forge/lua-feedstock/pull/40 or similar
+  skip: True  # [not linux]
   number: 0
 
 requirements:
