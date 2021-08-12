@@ -22,14 +22,17 @@ requirements:
     - lua
     - luarocks
     - lua-luafilesystem
-    - lua-luaposix 
+    - lua-luaposix
+    - tk
+    - pkg-config
   run:
     - libgcc  # [linux]
     - zlib
     - lua
     - luarocks
     - lua-luafilesystem
-    - lua-luaposix 
+    - lua-luaposix
+    - tk
 
 test:
   commands:
@@ -49,4 +52,5 @@ about:
 
 extra:
   recipe-maintainers:
+    - izahn
     - jerowe 

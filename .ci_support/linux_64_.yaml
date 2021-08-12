@@ -13,10 +13,14 @@ docker_image:
 lua:
 - '5'
 pin_run_as_build:
+  tk:
+    max_pin: x.x
   zlib:
     max_pin: x.x
 target_platform:
 - linux-64
+tk:
+- '8.6'
 zip_keys:
 - - cdt_name
   - docker_image
