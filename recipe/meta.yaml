@@ -18,12 +18,15 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}
+    - pkg-config
+  host:
     - zlib
     - lua
     - luarocks
     - lua-luafilesystem
     - lua-luaposix
     - tk
+    - tclreadline    
     - pkg-config
   run:
     - libgcc  # [linux]
@@ -33,6 +36,7 @@ requirements:
     - lua-luafilesystem
     - lua-luaposix
     - tk
+    - tclreadline
 
 test:
   commands:
