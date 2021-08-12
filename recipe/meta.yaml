@@ -50,7 +50,7 @@ about:
   home: https://github.com/TACC/Lmod
   license: MIT
   license_family: MIT
-  #license_file: LICENSE.txt
+  license_file: License
   summary: 'Lmod: An Environment Module System based on Lua, Reads TCL Modules, Supports a Software Hierarchy'
   dev_url: https://github.com/TACC/Lmod
   doc_url: http://lmod.readthedocs.org/
