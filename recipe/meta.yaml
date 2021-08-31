@@ -1,6 +1,6 @@
 {% set name = "lmod" %}
-{% set version = "8.5.9" %}
-{% set sha256 = "972f99221ed7717150bd591d4f96de1230125e675658f3fe2ba10197168bd296" %}
+{% set version = "8.5.13" %}
+{% set sha256 = "36c46402cb98a49c1c8c8503484003c2144d3fb94d55666de1d8b964c96f6573" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 
 build:
   ## osx build needs https://github.com/conda-forge/lua-feedstock/pull/40 or similar
-  skip: True  # [not linux]
+  skip: true  # [not linux]
   number: 0
 
 requirements:
@@ -27,7 +27,7 @@ requirements:
     - lua-luafilesystem
     - lua-luaposix
     - tk
-    - tclreadline    
+    - tclreadline
     - pkg-config
   run:
     - libgcc  # [linux]
@@ -58,5 +58,5 @@ about:
 extra:
   recipe-maintainers:
     - izahn
-    - jerowe 
+    - jerowe
     - izahn
