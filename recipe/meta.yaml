@@ -1,6 +1,6 @@
 {% set name = "lmod" %}
-{% set version = "8.7.25" %}
-{% set sha256 = "8f5096bdf80644fb3dec1f2209386a62b4e5b6cdc2051e15d8c22110eb56fff7" %}
+{% set version = "8.7.30" %}
+{% set sha256 = "ab5bcebbc84aef816471f0e78b3cb9d471a2555a66209dc21462faf4aea15d6c" %}
 
 package:
   name: {{ name|lower }}
